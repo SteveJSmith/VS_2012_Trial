@@ -1,3 +1,19 @@
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+
+Import-Module ServerManager
+Add-WindowsFeature Web-Server
+Add-WindowsFeature Web-Static-Content
+Add-WindowsFeature NET-Framework-45-Core
+Add-WindowsFeature NET-WCF-HTTP-Activation45
+Add-WindowsFeature Web-Asp-Net
+Add-WindowsFeature Web-Asp-Net45
+Add-WindowsFeature Web-Net-Ext
+Add-WindowsFeature Web-ISAPI-Ext
+Add-WindowsFeature Web-ISAPI-Filter
+Add-WindowsFeature Web-Mgmt-Tools
+
 cinst VisualStudio2012Professional
 
 Install-ChocolateyVsixPackage episerver http://visualstudiogallery.msdn.microsoft.com/4ad95160-e72f-4355-b53e-0994d2958d3e/file/76574/6/EPiServerVsExtension.vsix
+
+Disable-InternetExplorerESC
