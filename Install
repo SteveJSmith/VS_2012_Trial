@@ -1,6 +1,6 @@
 Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
 
-cinst VisualStudio2012Professional
+cinst VisualStudio2012PremWithWebTools
 
 Install-ChocolateyVsixPackage episerver http://visualstudiogallery.msdn.microsoft.com/4ad95160-e72f-4355-b53e-0994d2958d3e/file/76574/6/EPiServerVsExtension.vsix
 
